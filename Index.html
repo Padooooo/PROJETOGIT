@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro uso do GIT</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+            font-size: 5cqmin;
+            font-weight: bold;
+            text-wrap: pretty;
+            user-select: none;
+            transition: .5s;
+        }
+        body{
+            display: flex;
+            position: absolute;
+            inset: 0;
+            background-color: #222;
+            color: white;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+        #main{
+            display: flex;
+            width: 50%;
+            height: 50%;
+            max-width: 750px;
+            background: linear-gradient(134deg,#439cfb,#f187fb);
+            margin: auto 0 ;
+            text-align: center;
+            border-radius: 3%;
+            justify-content: center;
+            align-items: center;
+        }
+        span{
+            padding: 5px;
+        }
+        
+        #SocialArea{
+            display: flex;
+            max-width: 470px;
+            width: 50%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+        }
+
+        a{
+            display: flex;
+            text-decoration: none;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        #Instagram,#GitHub, #LinkedIn {
+            display: flex;
+            position: relative;
+            bottom: 5px;
+            margin: 5px;
+            padding: 2px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            cursor: pointer;
+        }
+
+        #Instagram:hover,#GitHub:hover, #LinkedIn:hover{
+            background-color: rgba(54,54,54);
+            border-radius: 8px;
+        }
+
+        #SocialArea span {
+            font-size: 1.4cqmax;
+            text-decoration-line: underline;
+            color: white;
+        }
+
+        svg{
+            height: 33px;
+            width: 33px;
+            fill: white;
+            margin: 5px;
+        }
+        @-moz-document url-prefix(){
+            #main span {
+                inline-size: 640px;
+            }
+ 
+        }
+
+        /* Extra small devices (phones, 600px and down) */
+
+        @media only screen and (max-width: 600px) {
+          #main{width: 60%}
+          #SocialArea{max-width: 750px; width:70%;justify-content:center}
+          #SocialArea span{display:none}
+          svg{height:43px;width:43px}
+        
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+           #main{width: 50%}
+          #SocialArea{max-width: 470px;width: 100%;justify-content:center}
+          #SocialArea span{display:none}
+          svg{height:43px;width:43px}
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+          #main{width: 50%}
+          #SocialArea{max-width: 470px;width: 100%;justify-content:center}
+          #SocialArea span{display:none}
+          svg{height:43px;width:43px}
+        } 
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+          #main{width: 50%}
+          #SocialArea{max-width: 470px;width: 100%;justify-content:center}
+          #SocialArea span{display:none}
+          svg{height:43px;width:43px}
+        } 
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+          #main{width: 50%}
+          #SocialArea{max-width: 470px;width: 100%;}
+          #SocialArea span{display:unset}
+          svg{height:33px;width:33px}
+        
+        }
+        @media only screen and (min-width: 1201px) {
+          #main{width: 80%}
+          #SocialArea{max-width: 470px;width: 100%;}
+          #SocialArea span{display:unset}
+          svg{height:33px;width:33px}
+        }
+        @media only screen and (min-width: 3840px) {
+          #main{width: 100%;max-width:1500px}
+          #main span{inline-size: 75%}
+          #SocialArea{max-width: 1500px;width: 100%;}
+          #SocialArea span{display:unset}
+          svg{height:100px; width:100px}
+          #Instagram,#GitHub,#LinkedIn {flex-basis: 30%;}
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <span></span>
+    </div>
+    <div id="SocialArea">
+        <div id="Instagram">
+            <a href="https://www.instagram.com/padooo_o/">
+                <svg aria-label="Instagram" role="img" viewBox="0 0 24 24"><title>Instagram</title><path d="M12 2.982c2.937 0 3.285.011 4.445.064a6.087 6.087 0 0 1 2.042.379 3.408 3.408 0 0 1 1.265.823 3.408 3.408 0 0 1 .823 1.265 6.087 6.087 0 0 1 .379 2.042c.053 1.16.064 1.508.064 4.445s-.011 3.285-.064 4.445a6.087 6.087 0 0 1-.379 2.042 3.643 3.643 0 0 1-2.088 2.088 6.087 6.087 0 0 1-2.042.379c-1.16.053-1.508.064-4.445.064s-3.285-.011-4.445-.064a6.087 6.087 0 0 1-2.043-.379 3.408 3.408 0 0 1-1.264-.823 3.408 3.408 0 0 1-.823-1.265 6.087 6.087 0 0 1-.379-2.042c-.053-1.16-.064-1.508-.064-4.445s.011-3.285.064-4.445a6.087 6.087 0 0 1 .379-2.042 3.408 3.408 0 0 1 .823-1.265 3.408 3.408 0 0 1 1.265-.823 6.087 6.087 0 0 1 2.042-.379c1.16-.053 1.508-.064 4.445-.064M12 1c-2.987 0-3.362.013-4.535.066a8.074 8.074 0 0 0-2.67.511 5.392 5.392 0 0 0-1.949 1.27 5.392 5.392 0 0 0-1.269 1.948 8.074 8.074 0 0 0-.51 2.67C1.012 8.638 1 9.013 1 12s.013 3.362.066 4.535a8.074 8.074 0 0 0 .511 2.67 5.392 5.392 0 0 0 1.27 1.949 5.392 5.392 0 0 0 1.948 1.269 8.074 8.074 0 0 0 2.67.51C8.638 22.988 9.013 23 12 23s3.362-.013 4.535-.066a8.074 8.074 0 0 0 2.67-.511 5.625 5.625 0 0 0 3.218-3.218 8.074 8.074 0 0 0 .51-2.67C22.988 15.362 23 14.987 23 12s-.013-3.362-.066-4.535a8.074 8.074 0 0 0-.511-2.67 5.392 5.392 0 0 0-1.27-1.949 5.392 5.392 0 0 0-1.948-1.269 8.074 8.074 0 0 0-2.67-.51C15.362 1.012 14.987 1 12 1Zm0 5.351A5.649 5.649 0 1 0 17.649 12 5.649 5.649 0 0 0 12 6.351Zm0 9.316A3.667 3.667 0 1 1 15.667 12 3.667 3.667 0 0 1 12 15.667Zm5.872-10.859a1.32 1.32 0 1 0 1.32 1.32 1.32 1.32 0 0 0-1.32-1.32Z"></path></svg>
+                <span>Instagram</span>
+            </a>
+        </div>
+        <div id="GitHub">
+            <a  href="https://github.com/Padooooo">
+                <svg aria-hidden="true" viewBox="0 0 16 16" data-view-component="true" ><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+                <span>GitHub</span>
+            </a>
+        </div>   
+        <div id="LinkedIn">
+            <a href="https://www.linkedin.com/in/guilherme-padovani-152240251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <svg viewBox="0 0 24 24" ><g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="matrix(1.1001100540161133, 0, 0, 1.1001100540161133, -68.94428253173828, 0.2098190039396286)"><path d="M19.479,0 L1.583,0 C0.727,0 0,0.677 0,1.511 L0,19.488 C0,20.323 0.477,21 1.333,21 L19.229,21 C20.086,21 21,20.323 21,19.488 L21,1.511 C21,0.677 20.336,0 19.479,0" class="bug-text-color" transform="translate(63.000000, 0.000000)"/><path d="M82.479,0 L64.583,0 C63.727,0 63,0.677 63,1.511 L63,19.488 C63,20.323 63.477,21 64.333,21 L82.229,21 C83.086,21 84,20.323 84,19.488 L84,1.511 C84,0.677 83.336,0 82.479,0 Z M71,8 L73.827,8 L73.827,9.441 L73.858,9.441 C74.289,8.664 75.562,7.875 77.136,7.875 C80.157,7.875 81,9.479 81,12.45 L81,18 L78,18 L78,12.997 C78,11.667 77.469,10.5 76.227,10.5 C74.719,10.5 74,11.521 74,13.197 L74,18 L71,18 L71,8 Z M66,18 L69,18 L69,8 L66,8 L66,18 Z M69.375,4.5 C69.375,5.536 68.536,6.375 67.5,6.375 C66.464,6.375 65.625,5.536 65.625,4.5 C65.625,3.464 66.464,2.625 67.5,2.625 C68.536,2.625 69.375,3.464 69.375,4.5 Z"/ fill="white""></g></svg>
+                <span>LinkedIn</span>
+            </a>    
+        </div>
+    </div>
+</body>
+<script>
+
+    async function MeuTextinho(TextoPado){
+        const lines = TextoPado.split(/[\n\t]+/).map(line => line.trim()).filter(line => line);
+        console.log(lines);
+        TextArea = document.querySelector("span");
+        console.log(TextArea);
+        for(const line of lines){
+            console.log(line)
+            setTimeout(() => {
+                TextArea.innerText = line;
+            }, 5000);
+            if(lines.indexOf(line) !== lines.length - 1) await new Promise(resolve => setTimeout(resolve, 5200));
+            
+        }
+        return lines.lenght
+    }
+    MeuTextinho(`
+    Olá
+    eu sou Pado
+    Estou estudando Desenvolvimento Web e aprendendo várias coisas todos os dias :D
+    Como dito no meu perfil, ainda estou aprendendo a usar o GitHub
+    Caso tenha se interessado entre em contato com os links abaixo`).then(e => console.log('Finalizado'))
+
+    function TextoSecreto() {
+        console.log("%c Texto secreto", 'color: #3352af;font-weight: bold;font-size: 35px');
+        console.log("%c Oioii para você que está lendo isso :D", 'color: #62cad7;font-weight: bold;font-size: 15px');
+    }
+    setInterval(TextoSecreto, 30000);
+</script>
+</html>
